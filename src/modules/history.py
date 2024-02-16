@@ -44,9 +44,9 @@ class ChatHistory:
                         st.session_state["user"][i],
                         is_user=True,
                         key=f"history_{i}_user",
-                        avatar_style="static\images\logo.png",
+                        avatar_style="static\images\man.png",
                     )
-                    message(st.session_state["assistant"][i], key=str(i), assistant_avatar = "static/images/logo.png")
+                    message(st.session_state["assistant"][i], key=str(i), assistant_avatar = "static/images/logoo.png")
 
     def load(self):
         if os.path.exists(self.history_file):
